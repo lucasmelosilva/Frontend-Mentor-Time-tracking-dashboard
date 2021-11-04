@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="/assets/styles/colors.css">
+  <link rel="stylesheet" href="/assets/styles/style.css">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
   <style>
@@ -14,12 +21,29 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <div class="container">
 
-  Daily
-  Weekly
-  Monthly
+    <section class="profile">
+      <header>
+        <img src="assets/images/image-jeremy.png" alt="Jeremy" class="image">
+
+        <div>
+          <span>Report for</span>
+          <h2 class="name">Jeremy Robson</h2>
+        </div>
+      </header>
+
+      <footer>
+        <ul>
+          <li>Daily</li>
+          <li>Weekly</li>
+          <li>Monthly</li>
+        </ul>
+      </footer>
+    </section>
+ 
+  
+  <section>
 
   Work
   5hrs <!-- daily -->
@@ -68,7 +92,9 @@
   Previous - 2hrs <!-- weekly -->
   7hrs <!-- monthly -->
   Previous - 11hrs <!-- monthly -->
+</section>
 
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
