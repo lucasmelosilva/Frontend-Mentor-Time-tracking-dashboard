@@ -1,0 +1,28 @@
+.header-profile {
+  padding: 10px 0;
+  border-radius: 15px;
+  width: 100%;
+  background: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.user-name {
+ margin: 0;
+ font-size: 18px; 
+ font-weight: 300;
+}
