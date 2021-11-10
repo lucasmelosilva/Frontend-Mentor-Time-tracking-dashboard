@@ -1,0 +1,21 @@
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding:0;
+
+  .item {
+    color: var(--neutral-pale-blue);
+    cursor: pointer;
+    opacity: 0.5;
+     
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .item.active {
+    opacity: 1;
+  }
+}

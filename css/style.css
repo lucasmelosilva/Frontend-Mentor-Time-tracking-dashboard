@@ -25,4 +25,65 @@ body {
   margin: 50px auto 0 auto;
 }
 
+.profile {
+  background: var(--neutral-dark-blue);
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  border-radius: 15px;
+}
+
+.header-profile {
+  padding: 20px 0;
+  border-radius: 15px;
+  width: 100%;
+  background: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-profile .profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: 35px;
+}
+.header-profile .user {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.header-profile .user span {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--neutral-pale-blue);
+}
+.header-profile .user .user-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5.8px;
+  color: var(--primary-white);
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.menu ul .item {
+  color: var(--neutral-pale-blue);
+  cursor: pointer;
+  opacity: 0.5;
+}
+.menu ul .item:hover {
+  opacity: 1;
+}
+.menu ul .item.active {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */

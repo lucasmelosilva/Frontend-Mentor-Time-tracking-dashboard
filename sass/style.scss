@@ -1,15 +1,5 @@
 @import "./colors.scss";
-
-body {
-  background: var(--neutral-very-dark-blue);
-  font-family: 'Rubik';
-  color: #fff;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 375px;
-  margin: 50px auto 0 auto;
-}
+@import "./base.scss";
+@import "./profile/profile.scss";
+@import "./profile/header.scss";
+@import "./profile/menu.scss";
