@@ -1,12 +1,12 @@
-.menu ul {
+.user-menu ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  padding:0;
+  padding: 1.5rem 0;
 
-  .item {
-    color: var(--neutral-pale-blue);
+  .menu-item {
+    color: $neutral-pale-blue;
     cursor: pointer;
     opacity: 0.5;
      
@@ -15,7 +15,7 @@
     }
   }
 
-  .item.active {
+  .active {
     opacity: 1;
   }
 }

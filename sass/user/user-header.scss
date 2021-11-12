@@ -1,14 +1,14 @@
-.header-profile {
+.user-header {
   padding: 10px 0;
   border-radius: 15px;
   width: 100%;
-  background: var(--primary-blue);
+  background: $primary-blue;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.profile-image {
+.user-image {
   width: 88px;
   height: 88px;
   border-radius: 50%;

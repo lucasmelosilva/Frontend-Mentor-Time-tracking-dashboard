@@ -1,18 +1,5 @@
-:root {
-  --primary-blue: hsl(246, 80%, 60%);
-  --primary-light-red-work: hsl(15, 100%, 70%);
-  --primary-soft-blue-play: hsl(195, 74%, 62%);
-  --primary-light-red-study: hsl(348, 100%, 68%);
-  --primary-lime-green-exercise: hsl(145, 58%, 55%);
-  --primary-violet-socil: hsl(246, 64%, 52%);
-  --neutral-very-dark-blue: hsl(226, 46%, 10%);
-  --neutral-dark-blue: hsl(235, 46%, 20%);
-  --dasaturated-blue: hsl(235, 45%, 61%);
-  --neutral-pale-blue: hsl(236, 100%, 87%);
-}
-
 body {
-  background: var(--neutral-very-dark-blue);
+  background: #0e1325;
   font-family: "Rubik";
   color: #fff;
 }
@@ -25,64 +12,58 @@ body {
   margin: 50px auto 0 auto;
 }
 
-.profile {
-  background: var(--neutral-dark-blue);
+.user {
+  background: #1c1f4a;
   display: flex;
   flex-direction: column;
   width: 85%;
   border-radius: 15px;
 }
 
-.header-profile {
-  padding: 20px 0;
+.user-header {
+  padding: 10px 0;
   border-radius: 15px;
   width: 100%;
-  background: var(--primary-blue);
+  background: #5847eb;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.header-profile .profile-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-right: 35px;
-}
-.header-profile .user {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-.header-profile .user span {
-  font-size: 15px;
-  font-weight: 300;
-  color: var(--neutral-pale-blue);
-}
-.header-profile .user .user-name {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 5.8px;
-  color: var(--primary-white);
+  justify-content: space-around;
 }
 
-.menu ul {
+.user-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.user-menu ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  padding: 0;
+  padding: 1.5rem 0;
 }
-.menu ul .item {
-  color: var(--neutral-pale-blue);
+.user-menu ul .menu-item {
+  color: #bdc1ff;
   cursor: pointer;
   opacity: 0.5;
 }
-.menu ul .item:hover {
+.user-menu ul .menu-item:hover {
   opacity: 1;
 }
-.menu ul .item.active {
+.user-menu ul .active {
   opacity: 1;
 }
 
