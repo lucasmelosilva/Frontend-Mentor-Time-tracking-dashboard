@@ -94,7 +94,7 @@ body {
 .activity-content {
   margin-top: 3.5rem;
   padding: 0.5rem;
-  background: #5847eb;
+  background: #1c1f4a;
   border-radius: 15px;
   padding: 0 1.5rem;
 }
@@ -123,6 +123,10 @@ body {
 .activity-content_datails .content_previous {
   font-size: 0.985rem;
   color: #bdc1ff;
+}
+
+.work {
+  background: #ff8c66;
 }
 
 /*# sourceMappingURL=style.css.map */
