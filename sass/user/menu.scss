@@ -1,9 +1,9 @@
 .user-menu ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 
   .menu-item {
     color: $neutral-pale-blue;

@@ -1,11 +1,12 @@
 .user-header {
-  padding: 10px 0;
+  box-sizing: border-box;
+  padding: 10px 1.5rem;
   border-radius: 15px;
   width: 100%;
   background: $primary-blue;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .user-image {
