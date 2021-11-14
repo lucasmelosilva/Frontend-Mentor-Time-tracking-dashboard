@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-width: 375px;
   margin: 50px auto 0 auto;
 }
@@ -21,13 +22,14 @@ body {
 }
 
 .user-header {
-  padding: 10px 0;
+  box-sizing: border-box;
+  padding: 10px 1.5rem;
   border-radius: 15px;
   width: 100%;
   background: #5847eb;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .user-image {
@@ -51,9 +53,9 @@ body {
 .user-menu ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 .user-menu ul .menu-item {
   color: #bdc1ff;
@@ -65,6 +67,62 @@ body {
 }
 .user-menu ul .active {
   opacity: 1;
+}
+
+.activities {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.activity {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1c1f4a;
+  border-radius: 15px;
+  position: relative;
+}
+.activity .activity-image {
+  width: 88px;
+  position: absolute;
+  top: -0.89rem;
+  right: 1rem;
+}
+
+.activity-content {
+  margin-top: 3.5rem;
+  padding: 0.5rem;
+  background: #5847eb;
+  border-radius: 15px;
+  padding: 0 1.5rem;
+}
+.activity-content .activity-content_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.3rem;
+}
+.activity-content .activity-content_header .content_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.activity-content_datails {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  align-items: baseline;
+}
+.activity-content_datails .content_current {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.activity-content_datails .content_previous {
+  font-size: 0.985rem;
+  color: #bdc1ff;
 }
 
 /*# sourceMappingURL=style.css.map */

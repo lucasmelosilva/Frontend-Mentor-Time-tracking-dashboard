@@ -1,0 +1,16 @@
+.activity-content_datails {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  align-items: baseline;
+
+  .content_current {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .content_previous {
+    font-size: .985rem;
+    color: $neutral-pale-blue
+  }
+}
