@@ -6,30 +6,39 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 375px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 50px auto;
+  max-width: 1080px;
 }
 
+@media screen and (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    max-width: 375px;
+  }
+}
 .user {
   background: #1c1f4a;
-  display: flex;
-  flex-direction: column;
-  width: 85%;
+  width: 35%;
+  height: 35rem;
   border-radius: 15px;
 }
 
+@media screen and (max-width: 1080px) {
+  .user {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+}
 .user-header {
   box-sizing: border-box;
-  padding: 10px 1.5rem;
+  padding: 2.5rem;
   border-radius: 15px;
   width: 100%;
+  height: 65%;
   background: #5847eb;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .user-image {
@@ -44,12 +53,31 @@ body {
   flex-direction: column;
 }
 
-.user-name {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 300;
+.user-information {
+  margin-top: 5rem;
 }
 
+.user-name {
+  margin-top: 2px;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .user-header {
+    display: flex;
+    padding: 10px 1.5rem;
+    height: 115px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
 .user-menu ul {
   display: flex;
   align-items: center;

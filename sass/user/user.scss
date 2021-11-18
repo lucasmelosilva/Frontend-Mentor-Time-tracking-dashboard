@@ -1,8 +1,14 @@
-
-.user{
+.user {
   background: $neutral-dark-blue;
-  display: flex;
-  flex-direction: column;
-  width: 85%;
+  width: 35%;
+  height: 35rem;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 1080px) {
+  .user {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
 }
