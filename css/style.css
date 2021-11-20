@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 85%;
+    height: auto;
   }
 }
 .user-header {
@@ -56,10 +57,17 @@ body {
 .user-information {
   margin-top: 5rem;
 }
-
-.user-name {
-  margin-top: 2px;
+.user-information span {
+  font-size: 0.959rem;
+  line-height: 1.2rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.user-information .user-name {
+  margin-top: 4px;
   font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1072rem;
 }
 
 @media screen and (max-width: 1080px) {
@@ -72,16 +80,25 @@ body {
     justify-content: space-between;
   }
 
-  .user-name {
+  .user-information {
+    margin-top: 0;
+  }
+  .user-information span {
+    font-size: 0.989rem;
+  }
+  .user-information .user-name {
     margin: 0;
     font-size: 18px;
     font-weight: 300;
   }
 }
 .user-menu ul {
+  height: 100%;
+  margin: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
   list-style: none;
   padding: 1.5rem;
 }
@@ -97,6 +114,12 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 1080px) {
+  .user-menu ul {
+    flex-direction: row;
+    margin: 0;
+  }
+}
 .activities {
   display: flex;
   flex-direction: column;

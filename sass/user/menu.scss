@@ -1,7 +1,10 @@
 .user-menu ul {
+  height: 100%;
+  margin: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
   list-style: none;
   padding: 1.5rem;
 
@@ -9,7 +12,7 @@
     color: $neutral-pale-blue;
     cursor: pointer;
     opacity: 0.5;
-     
+
     &:hover {
       opacity: 1;
     }
@@ -17,5 +20,12 @@
 
   .active {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .user-menu ul {
+    flex-direction: row;
+    margin: 0;
   }
 }
