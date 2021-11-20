@@ -1,15 +1,20 @@
 .activity {
-  margin-top: 1.5rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  background: $neutral-dark-blue;
+  margin-top: 1.5rem;
   border-radius: 15px;
+  background: $neutral-dark-blue;
 
   .activity-image {
     width: 88px;
     height: 50px;
     object-fit: cover;
     align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .activity {
+    width: 100%;
   }
 }

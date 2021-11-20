@@ -1,5 +1,14 @@
 .activities {
+  margin-left: 2rem;
   display: flex;
-  flex-direction: column;
-  width: 85%;
+  width: 60%;
+  flex-flow: wrap;
+}
+
+@media screen and (max-width: 1080px) {
+  .activities {
+    margin-left: 0;
+    flex-direction: column;
+    width: 85%;
+  }
 }
