@@ -2,7 +2,7 @@
   width: 18rem;
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
+
   border-radius: 15px;
   background: $neutral-dark-blue;
 
@@ -17,5 +17,6 @@
 @media screen and (max-width: 1080px) {
   .activity {
     width: 100%;
+    margin-top: 1.5rem;
   }
 }

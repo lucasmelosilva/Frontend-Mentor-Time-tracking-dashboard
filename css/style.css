@@ -131,14 +131,17 @@ body {
   margin-left: 2rem;
   display: flex;
   width: 60%;
+  height: 100%;
   flex-flow: wrap;
+  align-items: flex-end;
   flex-grow: 2;
 }
 
 @media screen and (max-width: 1080px) {
   .activities {
-    margin-left: 0;
     flex-direction: column;
+    height: auto;
+    margin-left: 0;
     width: 85%;
   }
 }
@@ -146,7 +149,6 @@ body {
   width: 18rem;
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
   border-radius: 15px;
   background: #1c1f4a;
 }
@@ -160,6 +162,7 @@ body {
 @media screen and (max-width: 1080px) {
   .activity {
     width: 100%;
+    margin-top: 1.5rem;
   }
 }
 .activity-content {
