@@ -1,4 +1,5 @@
 .activity {
+  width: 18rem;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
@@ -7,7 +8,7 @@
 
   .activity-image {
     width: 88px;
-    height: 50px;
+    height: 56px;
     object-fit: cover;
     align-self: flex-end;
   }

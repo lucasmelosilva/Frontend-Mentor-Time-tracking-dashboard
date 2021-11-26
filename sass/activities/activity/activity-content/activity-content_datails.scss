@@ -1,16 +1,36 @@
 .activity-content_datails {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  
   padding: 1.3rem 0;
   align-items: baseline;
 
   .content_current {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
   }
 
   .content_previous {
-    font-size: .985rem;
+    margin-top: 1.3rem;
+    font-size: 1rem;
     color: $neutral-pale-blue
+  }
+}
+
+
+@media screen and (max-width: 1080px) {
+  .activity-content_datails{
+    flex-direction: row;
+    justify-content: space-between;
+
+    .content_current {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .content_previous{
+      margin-top: 0;
+    font-size: .985rem;
+    }
   }
 }
