@@ -5,13 +5,13 @@
   width: 100%;
   height: 65%;
   background: $primary-blue;
-}
 
-.user-image {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  border: 3px solid #fff;
+  .user-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
 }
 
 .user {
@@ -23,7 +23,7 @@
   margin-top: 5rem;
 
   span {
-    font-size: .959rem;
+    font-size: 0.959rem;
     line-height: 1.2rem;
     font-weight: 300;
     opacity: 0.8;
@@ -45,18 +45,25 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    .user-image {
+      width: 60px;
+      height: 60px;
+    }
   }
   .user-information {
     margin-top: 0;
+    margin-right: 2rem;
 
     span {
-      font-size: 0.989rem;
+      font-size: 0.886rem;
     }
 
     .user-name {
       margin: 0;
       font-size: 18px;
       font-weight: 300;
+      line-height: 1.5rem;
     }
   }
 }

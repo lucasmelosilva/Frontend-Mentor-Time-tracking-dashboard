@@ -43,8 +43,7 @@ body {
   height: 65%;
   background: #5847eb;
 }
-
-.user-image {
+.user-header .user-image {
   width: 88px;
   height: 88px;
   border-radius: 50%;
@@ -81,17 +80,23 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .user-header .user-image {
+    width: 60px;
+    height: 60px;
+  }
 
   .user-information {
     margin-top: 0;
+    margin-right: 2rem;
   }
   .user-information span {
-    font-size: 0.989rem;
+    font-size: 0.886rem;
   }
   .user-information .user-name {
     margin: 0;
     font-size: 18px;
     font-weight: 300;
+    line-height: 1.5rem;
   }
 }
 .user-menu ul {
