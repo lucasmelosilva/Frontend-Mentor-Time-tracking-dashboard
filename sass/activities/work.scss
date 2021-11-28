@@ -1,3 +1,9 @@
 .work {
   background: $primary-light-red-work;
+  background-image: url(../../assets/images/icon-work.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+
+  grid-area: work;
 }
