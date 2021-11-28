@@ -1,0 +1,9 @@
+.exercise {
+  background: $primary-lime-green-exercise;
+  background-image: url(../../assets/images/icon-exercise.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+
+  grid-area: exercise;
+}
