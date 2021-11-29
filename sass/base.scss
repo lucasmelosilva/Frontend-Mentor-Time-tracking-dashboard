@@ -1,24 +1,22 @@
 body {
   background: $neutral-very-dark-blue;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   color: #fff;
 }
 
-
-
 .container {
   height: 35rem;
-  display : flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px auto 50px auto;
-  max-width: 1080px;
+  max-width: 1183px;
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px) {
   .container {
     height: auto;
     flex-direction: column;
     max-width: 375px;
-  }    
+  }
 }
