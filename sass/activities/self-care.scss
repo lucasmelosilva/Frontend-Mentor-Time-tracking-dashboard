@@ -1,0 +1,9 @@
+.self-care {
+  background: $soft-orange-self-care;  
+  background-image: url(../../assets/images/icon-self-care.svg);
+  background-position: 140px -3px;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+
+  grid-area: self_care;
+}
