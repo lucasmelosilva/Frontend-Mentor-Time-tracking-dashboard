@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 50px auto 50px auto;
-  max-width: 1080px;
+  max-width: 1183px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -128,9 +128,11 @@ body {
   }
 }
 .activities {
+  display: grid;
+  grid-template-areas: "work play study" "exercise social self_care";
+  gap: 2rem;
   margin-left: 2rem;
-  display: flex;
-  width: 60%;
+  width: 75%;
   height: 100%;
   flex-flow: wrap;
   align-items: flex-end;
@@ -139,6 +141,7 @@ body {
 
 @media screen and (max-width: 1080px) {
   .activities {
+    display: flex;
     flex-direction: column;
     height: auto;
     margin-left: 0;
@@ -146,21 +149,18 @@ body {
   }
 }
 .activity {
-  width: 18rem;
+  width: 16rem;
+  height: 16rem;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   border-radius: 15px;
   background: #1c1f4a;
 }
-.activity .activity-image {
-  width: 88px;
-  height: 56px;
-  object-fit: cover;
-  align-self: flex-end;
-}
 
 @media screen and (max-width: 1080px) {
   .activity {
+    height: 11.748rem;
     width: 100%;
     margin-top: 1.5rem;
   }
@@ -222,6 +222,56 @@ body {
 }
 .work {
   background: #ff8c66;
+  background-image: url(../../assets/images/icon-work.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  grid-area: work;
+}
+
+.play {
+  background: #56c2e6;
+  background-image: url(../../assets/images/icon-play.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  grid-area: play;
+}
+
+.study {
+  background: #ff5c7c;
+  background-image: url(../../assets/images/icon-study.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  grid-area: study;
+}
+
+.exercise {
+  background: #4acf81;
+  background-image: url(../../assets/images/icon-exercise.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  grid-area: exercise;
+}
+
+.social {
+  background: #4636d3;
+  background-image: url(../../assets/images/icon-social.svg);
+  background-position: 119px -3px;
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  grid-area: social;
+}
+
+.self-care {
+  background: #f1c65b;
+  background-image: url(../../assets/images/icon-self-care.svg);
+  background-position: 140px -3px;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  grid-area: self_care;
 }
 
 /*# sourceMappingURL=style.css.map */

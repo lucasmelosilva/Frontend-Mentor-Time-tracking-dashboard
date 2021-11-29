@@ -42,9 +42,9 @@
 
       <nav class="user-menu">
         <ul class="menu">
-          <li data="daily" class="menu-item">Daily</li>
-          <li data="weekly" class="menu-item active">Weekly</li>
-          <li data="monthly" class="menu-item">Monthly</li>
+          <li id="item1" class="menu-item">Daily</li>
+          <li id="item2" class="menu-item active">Weekly</li>
+          <li id="item3" class="menu-item">Monthly</li>
         </ul>
       </nav>
     </section>
@@ -53,9 +53,6 @@
     <section class="activities">
 
       <section class="activity work">
-
-        <img src="/assets/images/icon-work.svg" alt="icon work" class="activity-image">
-
         <div class="activity-content">
           <div class="activity-content_header">
             <h4 class="content_title">Work</h4>
@@ -71,13 +68,10 @@
         </div>
       </section>
 
-      <section class="activity work">
-
-        <img src="/assets/images/icon-work.svg" alt="icon work" class="activity-image">
-
+      <section class="activity play">
         <div class="activity-content">
           <div class="activity-content_header">
-            <h4 class="content_title">Work</h4>
+            <h4 class="content_title">Play</h4>
             <div class="wrapper">
               <img src="assets/images/icon-ellipsis.svg" alt="...">
             </div>
@@ -90,13 +84,10 @@
         </div>
       </section>
 
-      <section class="activity work">
-
-        <img src="/assets/images/icon-work.svg" alt="icon work" class="activity-image">
-
+      <section class="activity study">
         <div class="activity-content">
           <div class="activity-content_header">
-            <h4 class="content_title">Work</h4>
+            <h4 class="content_title">Study</h4>
             <div class="wrapper">
               <img src="assets/images/icon-ellipsis.svg" alt="...">
             </div>
@@ -109,13 +100,26 @@
         </div>
       </section>
 
-      <section class="activity work">
-
-        <img src="/assets/images/icon-work.svg" alt="icon work" class="activity-image">
-
+      <section class="activity exercise">
         <div class="activity-content">
           <div class="activity-content_header">
-            <h4 class="content_title">Work</h4>
+            <h4 class="content_title">Exercise</h4>
+            <div class="wrapper">
+              <img src="assets/images/icon-ellipsis.svg" alt="...">
+            </div>
+          </div>
+
+          <div class="activity-content_datails">
+            <p class="content_current">32hrs</p> 
+            <p class="content_previous">Last week - 36hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="activity social">
+        <div class="activity-content">
+          <div class="activity-content_header">
+            <h4 class="content_title">Social</h4>
             <div class="wrapper">
               <img src="assets/images/icon-ellipsis.svg" alt="...">
             </div>
@@ -128,33 +132,10 @@
         </div>
       </section>
 
-      <section class="activity work">
-
-        <img src="/assets/images/icon-work.svg" alt="icon work" class="activity-image">
-
+      <section class="activity self-care">
         <div class="activity-content">
           <div class="activity-content_header">
-            <h4 class="content_title">Work</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> <!-- weekly -->
-            <p class="content_previous">Last week - 36hrs</p> <!-- weekly -->
-          </div>
-        </div>
-      </section>
-
-
-      <section class="activity work">
-
-        <img src="/assets/images/icon-work.svg" alt="icon work" class="activity-image">
-
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Work</h4>
+            <h4 class="content_title">Self Care</h4>
             <div class="wrapper">
               <img src="assets/images/icon-ellipsis.svg" alt="...">
             </div>
@@ -176,6 +157,9 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
+  <script>
+    const $ = document.querySelector.bind(document);
+  </script>
   <script src="scripts/menu.js"></script>
 </body>
 
