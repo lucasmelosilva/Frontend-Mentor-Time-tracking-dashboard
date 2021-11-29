@@ -1,21 +1,17 @@
 .activity {
-  width: 18rem;
+  width: 16rem;
+  height: 16rem;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
 
   border-radius: 15px;
   background: $neutral-dark-blue;
-
-  .activity-image {
-    width: 88px;
-    height: 56px;
-    object-fit: cover;
-    align-self: flex-end;
-  }
 }
 
 @media screen and (max-width: 1080px) {
   .activity {
+    height: 11.748rem;
     width: 100%;
     margin-top: 1.5rem;
   }
