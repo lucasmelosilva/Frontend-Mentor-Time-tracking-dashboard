@@ -1,7 +1,11 @@
 .activities {
+  display: grid; 
+  grid-template-areas: 
+    "work play study"
+    "exercise social self_care";
+  gap: 2rem;
   margin-left: 2rem;
-  display: flex;
-  width: 60%;
+  width: 75%;
   height: 100%;
   flex-flow: wrap;
   align-items: flex-end;
@@ -10,6 +14,7 @@
 
 @media screen and (max-width: 1080px) {
   .activities {
+    display: flex;
     flex-direction: column;
     height: auto;
     margin-left: 0;
