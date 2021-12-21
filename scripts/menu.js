@@ -1,5 +1,5 @@
-const menu = document.querySelector('.menu');
-const itemsMenu = [$('#item1'), $('#item2'), $('#item3')];
+const menu = $('.menu');
+const itemsMenu = $$('.menu-item');
 
 function removeActiveClass() {
   itemsMenu.forEach(item => {
