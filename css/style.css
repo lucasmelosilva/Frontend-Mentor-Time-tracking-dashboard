@@ -223,55 +223,86 @@ body {
 .work {
   background: #ff8c66;
   background-image: url(../../assets/images/icon-work.svg);
-  background-position: 119px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 7rem;
+  background-size: 6rem;
   grid-area: work;
 }
 
+@media screen and (max-width: 1080px) {
+  .work {
+    background-position: 182px -3px;
+  }
+}
 .play {
   background: #56c2e6;
   background-image: url(../../assets/images/icon-play.svg);
-  background-position: 119px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 7rem;
+  background-size: 6rem;
   grid-area: play;
 }
 
+@media screen and (max-width: 1080px) {
+  .play {
+    background-position: 182px -3px;
+  }
+}
 .study {
   background: #ff5c7c;
   background-image: url(../../assets/images/icon-study.svg);
-  background-position: 119px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 7rem;
+  background-size: 6rem;
   grid-area: study;
 }
 
+@media screen and (max-width: 1080px) {
+  .study {
+    background-position: 182px -3px;
+  }
+}
 .exercise {
   background: #4acf81;
   background-image: url(../../assets/images/icon-exercise.svg);
-  background-position: 119px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 7rem;
+  background-size: 6rem;
   grid-area: exercise;
 }
 
+@media screen and (max-width: 1080px) {
+  .exercise {
+    background-position: 182px -3px;
+  }
+}
 .social {
   background: #4636d3;
   background-image: url(../../assets/images/icon-social.svg);
-  background-position: 119px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 7rem;
+  background-size: 6rem;
   grid-area: social;
 }
 
+@media screen and (max-width: 1080px) {
+  .social {
+    background-position: 182px -3px;
+  }
+}
 .self-care {
   background: #f1c65b;
   background-image: url(../../assets/images/icon-self-care.svg);
-  background-position: 140px -3px;
+  background-position: 143px -3px;
   background-repeat: no-repeat;
-  background-size: 5rem;
+  background-size: 4.5rem;
   grid-area: self_care;
+}
+
+@media screen and (max-width: 1080px) {
+  .self-care {
+    background-position: 201px -3px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

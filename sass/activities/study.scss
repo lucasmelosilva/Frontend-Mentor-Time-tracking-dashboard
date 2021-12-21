@@ -1,9 +1,15 @@
 .study {
   background: $primary-light-red-study;
   background-image: url(../../assets/images/icon-study.svg);
-  background-position: 119px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 7rem;
+  background-size: 6rem;
 
   grid-area: study;
+}
+
+@media screen and (max-width: 1080px) {
+  .study {
+    background-position: 182px -3px;
+  }
 }
