@@ -4,6 +4,7 @@
   background: $neutral-dark-blue;
   border-radius: 15px;
   padding: 0 1.5rem;
+  transition: background 0.3s ease-in-out;
 
   .activity-content_header {
     display: flex;
@@ -17,6 +18,10 @@
     font-weight: 500;
     color: #fff;
   }
+}
+
+.activity-content:hover {
+  background: hsl(235, 46%, 33%);
 }
 
 @media screen and (max-width: 1080px) {

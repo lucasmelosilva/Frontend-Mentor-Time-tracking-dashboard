@@ -171,6 +171,7 @@ body {
   background: #1c1f4a;
   border-radius: 15px;
   padding: 0 1.5rem;
+  transition: background 0.3s ease-in-out;
 }
 .activity-content .activity-content_header {
   display: flex;
@@ -182,6 +183,10 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
+}
+
+.activity-content:hover {
+  background: #2d347b;
 }
 
 @media screen and (max-width: 1080px) {
