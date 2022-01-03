@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto 50px auto;
+  margin: 35px auto 30px auto;
   max-width: 1183px;
 }
 
@@ -23,14 +23,16 @@ body {
 .user {
   background: #1c1f4a;
   width: 28%;
-  height: 100%;
+  height: 96%;
   border-radius: 15px;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 1080px) {
   .user {
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 85%;
     height: auto;
   }
@@ -150,11 +152,11 @@ body {
 }
 .activity {
   width: 16rem;
-  height: 16rem;
+  height: 15rem;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 20px;
   background: #1c1f4a;
 }
 
@@ -298,15 +300,15 @@ body {
 .self-care {
   background: #f1c65b;
   background-image: url(../../assets/images/icon-self-care.svg);
-  background-position: 143px -3px;
+  background-position: 120px -3px;
   background-repeat: no-repeat;
-  background-size: 4.5rem;
+  background-size: 6rem;
   grid-area: self_care;
 }
 
 @media screen and (max-width: 1080px) {
   .self-care {
-    background-position: 201px -3px;
+    background-position: 182px -3px;
   }
 }
 

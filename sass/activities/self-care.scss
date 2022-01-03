@@ -1,15 +1,15 @@
 .self-care {
   background: $soft-orange-self-care;  
   background-image: url(../../assets/images/icon-self-care.svg);
-  background-position: 143px -3px;
+  background-position: $icons-position-x-desktop $icons-position-y-desktop;
   background-repeat: no-repeat;
-  background-size: 4.5rem;
+  background-size: $icons-size;
 
   grid-area: self_care;
 }
 
 @media screen and (max-width: 1080px) {
   .self-care {
-    background-position: 201px -3px;
+    background-position: $icons-position-x-mobile $icons-position-y-mobile;
   }
 }

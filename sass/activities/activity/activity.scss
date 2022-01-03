@@ -1,12 +1,13 @@
 .activity {
   width: 16rem;
-  height: 16rem;
+  height: 15rem;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
 
-  border-radius: 15px;
+  border-radius: 20px;
   background: $neutral-dark-blue;
+  
 }
 
 @media screen and (max-width: 1080px) {

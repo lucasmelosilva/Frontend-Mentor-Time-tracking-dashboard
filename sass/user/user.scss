@@ -1,14 +1,16 @@
 .user {
   background: $neutral-dark-blue;
   width: 28%;
-  height: 100%;
+  height: 96%;
   border-radius: 15px;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 1080px) {
   .user {
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 85%;
     height: auto;
   }

@@ -1,15 +1,15 @@
 .social {
   background: $primary-violet-social;
   background-image: url(../../assets/images/icon-social.svg);
-  background-position: 120px -3px;
+  background-position: $icons-position-x-desktop $icons-position-y-desktop;
   background-repeat: no-repeat;
-  background-size: 6rem;
+  background-size: $icons-size;
 
   grid-area: social;
 }
 
 @media screen and (max-width: 1080px) {
   .social {
-    background-position: 182px -3px;
+    background-position: $icons-position-x-mobile $icons-position-y-mobile;
   }
 }
