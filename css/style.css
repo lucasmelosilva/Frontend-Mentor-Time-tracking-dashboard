@@ -111,12 +111,12 @@ body {
   list-style: none;
   padding: 1.5rem;
 }
-.user-menu ul .menu-item {
+.user-menu ul .menu_link {
   color: #bdc1ff;
   cursor: pointer;
   opacity: 0.5;
 }
-.user-menu ul .menu-item:hover {
+.user-menu ul .menu_link:hover {
   opacity: 1;
 }
 .user-menu ul .active {

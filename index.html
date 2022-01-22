@@ -20,6 +20,7 @@
       text-align: center;
       margin-bottom: 10px;
     }
+
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
@@ -42,114 +43,16 @@
 
       <nav class="user-menu">
         <ul class="menu">
-          <li id="item1" class="menu-item">Daily</li>
-          <li id="item2" class="menu-item active">Weekly</li>
-          <li id="item3" class="menu-item">Monthly</li>
+          <li  class="menu_link">Daily</li>
+          <li  class="menu_link active">Weekly</li>
+          <li  class="menu_link">Monthly</li>
         </ul>
       </nav>
     </section>
 
 
     <section class="activities">
-
-      <section class="activity work">
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Work</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> <!-- weekly -->
-            <p class="content_previous">Last week - 36hrs</p> <!-- weekly -->
-          </div>
-        </div>
-      </section>
-
-      <section class="activity play">
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Play</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> <!-- weekly -->
-            <p class="content_previous">Last week - 36hrs</p> <!-- weekly -->
-          </div>
-        </div>
-      </section>
-
-      <section class="activity study">
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Study</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> <!-- weekly -->
-            <p class="content_previous">Last week - 36hrs</p> <!-- weekly -->
-          </div>
-        </div>
-      </section>
-
-      <section class="activity exercise">
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Exercise</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> 
-            <p class="content_previous">Last week - 36hrs</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="activity social">
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Social</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> <!-- weekly -->
-            <p class="content_previous">Last week - 36hrs</p> <!-- weekly -->
-          </div>
-        </div>
-      </section>
-
-      <section class="activity self-care">
-        <div class="activity-content">
-          <div class="activity-content_header">
-            <h4 class="content_title">Self Care</h4>
-            <div class="wrapper">
-              <img src="assets/images/icon-ellipsis.svg" alt="...">
-            </div>
-          </div>
-
-          <div class="activity-content_datails">
-            <p class="content_current">32hrs</p> <!-- weekly -->
-            <p class="content_previous">Last week - 36hrs</p> <!-- weekly -->
-          </div>
-        </div>
-      </section>
-
     </section>
-
   </div>
 
   <div class="attribution">
@@ -157,11 +60,13 @@
     Coded by <a href="https://github.com/lucasmelosilva">Lucas Melo</a>.
   </div>
 
+
   <script>
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
   </script>
-  <script src="scripts/services/busca.js"></script>
+
+  <script src="scripts/app.js"></script>
   <script src="scripts/menu.js"></script>
 </body>
 
