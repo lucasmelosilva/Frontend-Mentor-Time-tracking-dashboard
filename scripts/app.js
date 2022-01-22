@@ -1,6 +1,7 @@
-let timeFrame = 'weekly'; // valor padrao
+let timeFrame = 'monthly'; // valor padrao
 let data = {}
 const sectionCards = $('.activities')
+let regularCards;
 
 // pega as infomacoes do data.json
 fetch('../data.json')
@@ -12,11 +13,31 @@ fetch('../data.json')
       let card = creatRecularCard(element, timeFrame)
       // insertAdjacentHTML insere um texto no padrao html ou xml em um no do DOM passando a posicao
       sectionCards.insertAdjacentHTML('beforeend', card)
+
+      jsonResponse.forEach(element => {
+        data[element.title] = element.timeframes;
+      })
+
+      // guarda os cards
+      regularCards = $$('.activity');
     })
   })
 
 function updateCards(timeFrame) {
-  console.log(timeFrame)
+  regularCards.forEach(card => updateCard(card, timeFrame))
+}
+
+function updateCard(card, timeFrame) {
+
+  const timeframeMsg = {
+    'daily': 'Yesterday',
+    'weekly': 'Last Week',
+    'monthly': 'Last Month'
+  }
+  const $ = card.querySelector.bind(card);
+  const title = $('.content_title').innerText
+  $('.content_current').innerText = data[title][timeFrame].current + 'hrs'
+  $('.content_previous').innerText = timeframeMsg[timeFrame] + ' - ' + data[title][timeFrame].previous + 'hrs'
 }
 
 // cria card
@@ -25,6 +46,12 @@ function creatRecularCard(element, timeFrame) {
   let title = element.title;
   let current = element['timeframes'][timeFrame].current;
   let previous = element['timeframes'][timeFrame].previous;
+
+  const timeframeMsg = {
+    'daily': 'Yesterday',
+    'weekly': 'Last Week',
+    'monthly': 'Last Month'
+  }
 
   return `<section class="activity ${title.toLowerCase().replace(/\s/g, '-')}">
             <div class="activity-content">
@@ -37,7 +64,7 @@ function creatRecularCard(element, timeFrame) {
 
               <div class="activity-content_datails">
                 <p class="content_current">${current}hrs</p> 
-                <p class="content_previous">Last  - ${previous}hrs</p>
+                <p class="content_previous">${timeframeMsg[timeFrame]} - ${previous}hrs</p>
               </div>
             </div>
           </section>`
